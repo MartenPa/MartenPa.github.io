@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="krüptoäpp.css" rel="stylesheet">
+	<script src="data.js"></script> 
+	<script src="krüptoäpp.js"></script> 
+
+</head>
+
+<body onload="myFunction()">
+	<div class="content">
+		<div id="logo"><img src="logo.jpg" alt="logo"></div>
+		<div class="textbox">
+			<form>
+				<textarea type="text" name="sisend" id="sisend" placeholder="Sisend" oninput="myFunction()"></textarea> 
+				<textarea type="text" name="võti" id="võti" placeholder="Võti" oninput="myFunction()"></textarea> 
+				<div class="radiocontainer">
+					<label class="radiobutton" id="radiobutton1">
+						<input type="radio" name="options" id="button1" value="OTP-encrypt" onclick="myFunction()" checked>
+						OTP-encrypt
+					</label>
+					<label class="radiobutton" id="radiobutton2">
+						<input type="radio" name="options" id="button2" value="OTP-decrypt" onclick="myFunction()">
+						OTP-decrypt
+					</label>
+					<label class="radiobutton" id="radiobutton3">
+						<input type="radio" name="options" id="button3" value="SHA-2" onclick="myFunction()">
+						SHA-2
+					</label>
+					<label class="radiobutton" id="radiobutton4">
+						<input type="radio" name="options" id="button4" value="MD5-decrypt" onclick="myFunction()">
+						MD5-decrypt
+					</label>
+				</div>
+				<textarea placeholder="Tulemus" id="tulemus" readonly></textarea> 
+			</form>
+		</div>
+	</div>
+</body>
+</html>
